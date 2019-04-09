@@ -1,5 +1,5 @@
 {
-"title": "Personal rules(@umbum4.RDP)",
+"title": "Personal rules(@umbum70.RDP-AppleKeyboard)",
 "rules": [
     {
       "description": "RDP : alt(option) <> win(command)",
@@ -25,6 +25,16 @@
               "bundle_identifiers": [
                 "com\\.microsoft\\.rdc\\."
               ]
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 635,
+                  "description": "Apple Internal Keyboard"
+                }
+              ]
             }
           ]
         },
@@ -48,6 +58,16 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "com\\.microsoft\\.rdc\\."
+              ]
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 635,
+                  "description": "Apple Internal Keyboard"
+                }
               ]
             }
           ]
@@ -78,6 +98,16 @@
               "bundle_identifiers": [
                 "com\\.microsoft\\.rdc\\."
               ]
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 635,
+                  "description": "Apple Internal Keyboard"
+                }
+              ]
             }
           ]
         },
@@ -102,13 +132,23 @@
               "bundle_identifiers": [
                 "com\\.microsoft\\.rdc\\."
               ]
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 635,
+                  "description": "Apple Internal Keyboard"
+                }
+              ]
             }
           ]
         }
       ]
     },
     {
-      "description": "RDP : right_command(win2) <- right_option(language shift)",
+      "description": "RDP : right_command <- right_alt(language shift)",
         "manipulators": [
         {
           "type": "basic",
@@ -125,6 +165,16 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "com\\.microsoft\\.rdc\\."
+              ]
+            },
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 635,
+                  "description": "Apple Internal Keyboard"
+                }
               ]
             }
           ]

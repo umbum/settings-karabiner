@@ -1,0 +1,118 @@
+{
+    "title": "Personal rules(@umbum80.PC-KEYBOARD)",
+    "rules": [
+      {
+        "description": "[Ctrl Win Alt]  [left_control left_command left_option]",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "left_command",
+              "modifiers": {
+                "optional": [
+                  "any"
+                ]
+              }
+            },
+            "to": [
+              {
+                "key_code": "left_control"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "frontmost_application_unless",
+                "bundle_identifiers": [
+                  "com\\.microsoft\\.rdc\\."
+                ]
+              },
+              {
+                "type": "device_unless",
+                "identifiers": [
+                  {
+                    "vendor_id": 1452,
+                    "product_id": 635,
+                    "description": "Apple Internal Keyboard"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "left_control",
+              "modifiers": {
+                "optional": [
+                  "any"
+                ]
+              }
+            },
+            "to": [
+              {
+                "key_code": "left_command"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "frontmost_application_unless",
+                "bundle_identifiers": [
+                  "com\\.microsoft\\.rdc\\."
+                ]
+              },
+              {
+                "type": "device_unless",
+                "identifiers": [
+                  {
+                    "vendor_id": 1452,
+                    "product_id": 635,
+                    "description": "Apple Internal Keyboard"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "description": "right_alt <- left_control+space (language change)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "right_option",
+              "modifiers": {
+                "optional": [
+                  "any"
+                ]
+              }
+            },
+            "to": [
+              {
+                "key_code": "spacebar",
+                "modifiers": "left_control"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "frontmost_application_unless",
+                "bundle_identifiers": [
+                  "com\\.microsoft\\.rdc\\."
+                ]
+              },
+              {
+                "type": "device_unless",
+                "identifiers": [
+                  {
+                    "vendor_id": 1452,
+                    "product_id": 635,
+                    "description": "Apple Internal Keyboard"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

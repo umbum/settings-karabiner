@@ -96,7 +96,7 @@
                 "left_command"
               ],
               "optional": [
-                "shift"
+                "any"
               ]
             }
           },
@@ -124,13 +124,69 @@
                 "left_option"
               ],
               "optional": [
-                "shift"
+                "any"
               ]
             }
           },
           "to": [
             {
               "key_code": "delete_or_backspace",
+              "modifiers": "left_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "com\\.microsoft\\.rdc\\."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "delete_forward",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_forward",
+              "modifiers": "left_option"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "com\\.microsoft\\.rdc\\."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "delete_forward",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_forward",
               "modifiers": "left_command"
             }
           ],

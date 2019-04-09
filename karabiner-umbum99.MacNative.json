@@ -21,7 +21,7 @@
             ],
             "conditions": [
               {
-                "type": "device_unless",
+                "type": "device_if",
                 "identifiers": [
                   {
                     "vendor_id": 1452,
@@ -49,7 +49,7 @@
             ],
             "conditions": [
               {
-                "type": "device_unless",
+                "type": "device_if",
                 "identifiers": [
                   {
                     "vendor_id": 1452,
