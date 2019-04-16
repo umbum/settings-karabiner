@@ -75,7 +75,7 @@
         ]
       },
       {
-        "description": "right_alt <- left_control+space (language change)",
+        "description": "[right_alt] <- [left_control+space] (language change)",
         "manipulators": [
           {
             "type": "basic",
@@ -91,6 +91,71 @@
               {
                 "key_code": "spacebar",
                 "modifiers": "left_control"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "frontmost_application_unless",
+                "bundle_identifiers": [
+                  "com\\.microsoft\\.rdc\\."
+                ]
+              },
+              {
+                "type": "device_unless",
+                "identifiers": [
+                  {
+                    "vendor_id": 1452,
+                    "product_id": 635,
+                    "description": "Apple Internal Keyboard"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "description": "[home/end] <- [left_gui + arrow]",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "home"
+            },
+            "to": [
+              {
+                "key_code": "left_arrow",
+                "modifiers": "left_command"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "frontmost_application_unless",
+                "bundle_identifiers": [
+                  "com\\.microsoft\\.rdc\\."
+                ]
+              },
+              {
+                "type": "device_unless",
+                "identifiers": [
+                  {
+                    "vendor_id": 1452,
+                    "product_id": 635,
+                    "description": "Apple Internal Keyboard"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "end"
+            },
+            "to": [
+              {
+                "key_code": "right_arrow",
+                "modifiers": "left_command"
               }
             ],
             "conditions": [
