@@ -2,7 +2,7 @@
   "title": "Personal rules(@umbum1.LanguageChange)",
   "rules": [
     {
-      "description": "right_command <- left_control+space (language change)",
+      "description": "right_command -> left_control+space (language change)",
       "manipulators": [
         {
           "type": "basic",

@@ -148,7 +148,7 @@
       ]
     },
     {
-      "description": "RDP : right_command <- right_alt(language shift)",
+      "description": "RDP : right_command -> right_alt(language shift)",
         "manipulators": [
         {
           "type": "basic",

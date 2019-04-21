@@ -1,8 +1,8 @@
 {
-    "title": "Personal rules(@umbum80.PC-KEYBOARD)",
-    "rules": [
+"title": "Personal rules(@umbum80.PC-KEYBOARD)",
+"rules": [
       {
-        "description": "[Ctrl Win Alt]  [left_control left_command left_option]",
+        "description": "PC : [Ctrl Win Alt]  [left_control left_command left_option]",
         "manipulators": [
           {
             "type": "basic",
@@ -75,7 +75,7 @@
         ]
       },
       {
-        "description": "[right_alt] <- [left_control+space] (language change)",
+        "description": "PC : [right_alt] -> [left_control+space] (language change)",
         "manipulators": [
           {
             "type": "basic",
@@ -115,7 +115,7 @@
         ]
       },
       {
-        "description": "[home/end] <- [left_gui + arrow]",
+        "description": "PC : [home / end] -> [left_gui + arrow]",
         "manipulators": [
           {
             "type": "basic",
@@ -126,6 +126,75 @@
               {
                 "key_code": "left_arrow",
                 "modifiers": "left_command"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "frontmost_application_unless",
+                "bundle_identifiers": [
+                  "com\\.microsoft\\.rdc\\."
+                ]
+              }, 
+              {
+                "type": "device_unless",
+                "identifiers": [
+                  {
+                    "vendor_id": 1452,
+                    "product_id": 635,
+                    "description": "Apple Internal Keyboard"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "end"
+            },
+            "to": [
+              {
+                "key_code": "right_arrow",
+                "modifiers": "left_command"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "frontmost_application_unless",
+                "bundle_identifiers": [
+                  "com\\.microsoft\\.rdc\\."
+                ]
+              },
+              {
+                "type": "device_unless",
+                "identifiers": [
+                  {
+                    "vendor_id": 1452,
+                    "product_id": 635,
+                    "description": "Apple Internal Keyboard"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "description": "PC : [ctrl + home / ctrl + end] -> [home / end]",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "home",
+              "modifiers": {
+                "mandatory": [
+                  "left_command"
+                ]
+              }
+            },
+            "to": [
+              {
+                "key_code": "home"
               }
             ],
             "conditions": [
@@ -150,12 +219,16 @@
           {
             "type": "basic",
             "from": {
-              "key_code": "end"
+              "key_code": "end",
+              "modifiers": {
+                "mandatory": [
+                  "left_command"
+                ]
+              }
             },
             "to": [
               {
-                "key_code": "right_arrow",
-                "modifiers": "left_command"
+                "key_code": "end"
               }
             ],
             "conditions": [

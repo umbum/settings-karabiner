@@ -143,7 +143,7 @@
       ]
     },
     {
-      "description": "caps_lock <- control",
+      "description": "caps_lock -> control",
       "manipulators": [
         {
           "type": "basic",
