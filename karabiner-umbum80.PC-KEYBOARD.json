@@ -115,12 +115,17 @@
         ]
       },
       {
-        "description": "PC : [home / end] -> [left_gui + arrow]",
+        "description": "PC : Chrome : [home / end] -> [left_gui + arrow (+shift)]",
         "manipulators": [
           {
             "type": "basic",
             "from": {
-              "key_code": "home"
+              "key_code": "home",
+              "modifiers": {
+                "optional": [
+                  "shift"
+                ]
+              }
             },
             "to": [
               {
@@ -130,9 +135,9 @@
             ],
             "conditions": [
               {
-                "type": "frontmost_application_unless",
+                "type": "frontmost_application_if",
                 "bundle_identifiers": [
-                  "com\\.microsoft\\.rdc\\."
+                  "com\\.google\\.Chrome"
                 ]
               }, 
               {
@@ -150,7 +155,12 @@
           {
             "type": "basic",
             "from": {
-              "key_code": "end"
+              "key_code": "end",
+              "modifiers": {
+                "optional": [
+                  "shift"
+                ]
+              }
             },
             "to": [
               {
@@ -160,82 +170,9 @@
             ],
             "conditions": [
               {
-                "type": "frontmost_application_unless",
+                "type": "frontmost_application_if",
                 "bundle_identifiers": [
-                  "com\\.microsoft\\.rdc\\."
-                ]
-              },
-              {
-                "type": "device_unless",
-                "identifiers": [
-                  {
-                    "vendor_id": 1452,
-                    "product_id": 635,
-                    "description": "Apple Internal Keyboard"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "description": "PC : [ctrl + home / ctrl + end] -> [home / end]",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": {
-              "key_code": "home",
-              "modifiers": {
-                "mandatory": [
-                  "left_command"
-                ]
-              }
-            },
-            "to": [
-              {
-                "key_code": "home"
-              }
-            ],
-            "conditions": [
-              {
-                "type": "frontmost_application_unless",
-                "bundle_identifiers": [
-                  "com\\.microsoft\\.rdc\\."
-                ]
-              },
-              {
-                "type": "device_unless",
-                "identifiers": [
-                  {
-                    "vendor_id": 1452,
-                    "product_id": 635,
-                    "description": "Apple Internal Keyboard"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "basic",
-            "from": {
-              "key_code": "end",
-              "modifiers": {
-                "mandatory": [
-                  "left_command"
-                ]
-              }
-            },
-            "to": [
-              {
-                "key_code": "end"
-              }
-            ],
-            "conditions": [
-              {
-                "type": "frontmost_application_unless",
-                "bundle_identifiers": [
-                  "com\\.microsoft\\.rdc\\."
+                  "com\\.google\\.Chrome"
                 ]
               },
               {
