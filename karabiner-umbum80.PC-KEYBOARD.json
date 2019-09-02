@@ -115,7 +115,7 @@
         ]
       },
       {
-        "description": "PC : Chrome : [home / end] -> [left_gui + arrow (+shift)]",
+        "description": "PC : [home / end] -> [left_gui + arrow (+shift)]",
         "manipulators": [
           {
             "type": "basic",
@@ -137,7 +137,8 @@
               {
                 "type": "frontmost_application_if",
                 "bundle_identifiers": [
-                  "com\\.google\\.Chrome"
+                  "com\\.google\\.Chrome",
+                  "com\\.kakao\\.KakaoTalkMac"
                 ]
               }, 
               {
@@ -172,7 +173,8 @@
               {
                 "type": "frontmost_application_if",
                 "bundle_identifiers": [
-                  "com\\.google\\.Chrome"
+                  "com\\.google\\.Chrome",
+                  "com\\.kakao\\.KakaoTalkMac"
                 ]
               },
               {
