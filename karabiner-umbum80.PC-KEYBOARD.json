@@ -23,7 +23,8 @@
               {
                 "type": "frontmost_application_unless",
                 "bundle_identifiers": [
-                  "com\\.microsoft\\.rdc\\."
+                  "com\\.microsoft\\.rdc\\.",
+                  "com\\.vmware\\.horizon"
                 ]
               },
               {
@@ -57,7 +58,8 @@
               {
                 "type": "frontmost_application_unless",
                 "bundle_identifiers": [
-                  "com\\.microsoft\\.rdc\\."
+                  "com\\.microsoft\\.rdc\\.",
+                  "com\\.vmware\\.horizon"
                 ]
               },
               {
@@ -97,7 +99,8 @@
               {
                 "type": "frontmost_application_unless",
                 "bundle_identifiers": [
-                  "com\\.microsoft\\.rdc\\."
+                  "com\\.microsoft\\.rdc\\.",
+                  "com\\.vmware\\.horizon"
                 ]
               },
               {
@@ -138,6 +141,7 @@
                 "type": "frontmost_application_unless",
                 "bundle_identifiers": [
                   "com\\.microsoft\\.rdc\\.",
+                  "com\\.vmware\\.horizon",
                   "com\\.microsoft\\.VSCode",
                   "com\\.jetbrains\\.intellij"
                 ]
@@ -175,6 +179,7 @@
                 "type": "frontmost_application_unless",
                 "bundle_identifiers": [
                   "com\\.microsoft\\.rdc\\.",
+                  "com\\.vmware\\.horizon",
                   "com\\.microsoft\\.VSCode",
                   "com\\.jetbrains\\.intellij"
                 ]

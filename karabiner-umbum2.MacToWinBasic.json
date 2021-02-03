@@ -23,7 +23,8 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "com\\.microsoft\\.rdc\\."
+                "com\\.microsoft\\.rdc\\.",
+                "com\\.vmware\\.horizon"
               ]
             },
             {
@@ -31,7 +32,7 @@
               "identifiers": [
                 {
                   "vendor_id": 1452,
-                  "product_id": 632,
+                  "product_id": 635,
                   "description": "Apple Internal Keyboard"
                 }
               ]
@@ -57,7 +58,8 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "com\\.microsoft\\.rdc\\."
+                "com\\.microsoft\\.rdc\\.",
+                "com\\.vmware\\.horizon"
               ]
             },
             {
@@ -65,7 +67,7 @@
               "identifiers": [
                 {
                   "vendor_id": 1452,
-                  "product_id": 632,
+                  "product_id": 635,
                   "description": "Apple Internal Keyboard"
                 }
               ]
@@ -91,7 +93,8 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "com\\.microsoft\\.rdc\\."
+                "com\\.microsoft\\.rdc\\.",
+                "com\\.vmware\\.horizon"
               ]
             },
             {
@@ -99,7 +102,7 @@
               "identifiers": [
                 {
                   "vendor_id": 1452,
-                  "product_id": 632,
+                  "product_id": 635,
                   "description": "Apple Internal Keyboard"
                 }
               ]
@@ -125,7 +128,8 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "com\\.microsoft\\.rdc\\."
+                "com\\.microsoft\\.rdc\\.",
+                "com\\.vmware\\.horizon"
               ]
             },
             {
@@ -133,7 +137,7 @@
               "identifiers": [
                 {
                   "vendor_id": 1452,
-                  "product_id": 632,
+                  "product_id": 635,
                   "description": "Apple Internal Keyboard"
                 }
               ]
@@ -164,7 +168,8 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "com\\.microsoft\\.rdc\\."
+                "com\\.microsoft\\.rdc\\.",
+                "com\\.vmware\\.horizon"
               ]
             }
           ]
