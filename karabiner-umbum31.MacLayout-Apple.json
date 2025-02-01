@@ -27,6 +27,15 @@
                   "is_built_in_keyboard": true
                 }
               ]
+            },
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 2220,
+                  "description": "REALFORCE MAC"
+                }
+              ]
             }
           ]
         },
@@ -53,13 +62,22 @@
                   "is_built_in_keyboard": true
                 }
               ]
+            },
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 2220,
+                  "description": "REALFORCE MAC"
+                }
+              ]
             }
           ]
         }
       ]
     },
     {
-      "description": "AP : [right_command] -> [left_control+space] (language change)",
+      "description": "AP : [right_command] -> [f18] (language change)",
       "manipulators": [
         {
           "type": "basic",
@@ -73,8 +91,7 @@
           },
           "to": [
             {
-              "key_code": "spacebar",
-              "modifiers": "left_control"
+              "key_code": "f18"
             }
           ],
           "conditions": [

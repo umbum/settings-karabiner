@@ -73,7 +73,7 @@
         ]
       },
       {
-        "description": "PC : [right_alt] -> [left_control+space] (language change)",
+        "description": "PC : [right_alt] -> [f18] (language change)",
         "manipulators": [
           {
             "type": "basic",
@@ -87,8 +87,7 @@
             },
             "to": [
               {
-                "key_code": "spacebar",
-                "modifiers": "left_control"
+                "key_code": "f18"
               }
             ],
             "conditions": [
